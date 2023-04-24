@@ -1,0 +1,115 @@
+.container {
+    max-width: 110rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+
+    
+
+}
+
+.form-btn {
+    border: 0;
+    display: block;
+    align-self: flex-end;
+    padding: 1.7rem;
+    border-radius:5px;
+    background-color: var(--color-secondary);
+    color: var(--grey-light-1);
+    text-transform:uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: 7px 7px 33px rgba(209, 209, 209, 0.5), -7px -7px 33px rgb(255, 255, 255, 0.5);
+    }
+
+    .icon-wrapper {
+        display: block;
+    }
+
+    &:hover .icon-wrapper {
+        animation: fly-1 0.6s ease-in-out infinite alternate;
+    }
+
+    &:hover .fa-paper-plane {
+        transform: translateX(1.2em) rotate(45deg) scale(1.1);
+    }
+
+   .fa-paper-plane {
+       display: block;
+       transform-origin: center center;
+       transition: transform .3s ease-in-out;
+   }
+
+   & span {
+    display: block;
+    margin-left: 0.4rem;
+    transition:all 0.3s ease-in-out;
+
+   }
+
+   &:hover span {
+    right: 20px;
+    transform: translateX(35rem);
+    opacity: 0;
+}
+
+   &:active {
+    transform: scale(0.95);
+   }
+}
+
+.text-container {
+    padding: 1.6rem;
+    transition: all .2s;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.heading-txt {
+    transition: all .2s;
+    display: inline-block;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgb(0 0 0 / 20%);
+    }
+}
+
+.h-1 {
+    font-size: 4.8rem;
+    margin-bottom: 9rem;
+
+
+@media (max-width:480px) {
+    font-size: 4.6rem;
+}
+}
+
+.h-2 {
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+}
+
+.u-align-center {
+    text-align: center;
+}
+
+.u-align-right {
+    text-align: right;
+}
+
+.projects-container {
+    text-align: center;
+
+    @media (max-width:480px) {
+        text-align: left;
+    }
+}

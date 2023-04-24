@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script
+    src="https://kit.fontawesome.com/850d159fc9.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="icon" href="./Design/Logo.png">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+          <img src="./Design/Logo.png" alt="" class="logo__img" />
+          <span class="logo__text">Brainster</span>
+        </a>
+        <nav>
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--border" href="https://brainster.co/marketing/">Академија за маркетинг</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--border" href="https://brainster.co/full-stack/">Академија за програмирање</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--border" href="https://brainster.co/data-science/">Академија за data science</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--border" href="https://brainster.co/graphic-design/">Академија за дизајн</a>
+            </li>
+            <li class="navigation__item flex-shrink-0">
+              <a class="navigation__link nav-cta" href="contact.html"
+                ><span>Вработи наш студент</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <i class="fas fa-bars fa-2x"></i>
+          <i class="fas fa-times fa-2x"></i>
+        </button>
+      </header>
+
+      <section class="hero">
+        <h1 class="heading"> <span>Brainster</span> <span>labs</span></h1>
+      </section>
+
+      <section class="sort-by">
+        <div>
+          <input type="checkbox" class="sort-by__checkbox" id="filterMarketing">
+          <label class="sort-by__marketing" id="filter-marketing" for="filterMarketing">
+          <p>Проекти на студенти по академија за маркетинг</p>
+          <i class="fas fa-check-circle sort-by__icon"></i>
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" class="sort-by__checkbox" id="filterCoding">
+          <label id="filter-coding" class="sort-by__coding" for="filterCoding">
+          <p>Проекти на студенти по академија за програмирање</p>
+          <i class="fas fa-check-circle sort-by__icon"></i>
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" class="sort-by__checkbox" id="filterDesign">
+          <label id="filter-design" class="sort-by__design" for="filterDesign">
+          <p>Проекти на студенти по академија за дизајн</p>
+          <i class="fas fa-check-circle sort-by__icon"></i>
+        </label> 
+        </div>
+      </section>
+
+      <section class="section-cards">
+        <div class="container">
+          <div class="projects-container">
+          <h2 class="heading-txt h-2">Проекти</h2>
+          </div>
+          <div class="cards">
+           <div class="card coding">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/coding" alt="">
+               </div>
+               <div class="text-container">
+                 <p class="card__tag">
+                   Академија за Програмирање
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+   
+               </div>
+             </a>
+           </div>
+         
+           <div class="card coding">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/coding" alt="">
+               </div>
+               <div class="text-container">
+                 <p class="card__tag">
+                   Академија за Програмирање
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card coding">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/coding" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                   Академија за Програмирање
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card design">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/design" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                     Академија за Дизајн
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card coding">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/coding" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                   Академија за Програмирање
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card coding ">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/coding" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                   Академија за Програмирање
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card marketing">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/marketing" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                   Академија за Маркетинг
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+             
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card coding">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/coding" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                   Академија за Програмирање
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card coding ">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/coding" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                   Академија за Програмирање
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card marketing">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/marketing" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                     Академија за Маркетинг
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+          
+             <div class="card coding ">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/coding" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                   Академија за Програмирање
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+             </div>
+       
+           <div class="card design">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/design" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                   Академија за Дизајн
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card design">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/design" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                     Академија за Дизајн
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card design">
+             <a href="#"> 
+               <div class="card__img">
+                 <img src="./Design/design" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                     Академија за Дизајн
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+         
+           <div class="card marketing">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/marketing" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                     Академија за Маркетинг
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card marketing">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/marketing" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                     Академија за Маркетинг
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card coding">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/coding" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                   Академија за Програмирање
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card marketing">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/marketing" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                     Академија за Маркетинг
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+               
+             </a>
+   
+           </div>
+           <div class="card coding">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/coding" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                   Академија за Програмирање
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </a>
+   
+           </div>
+           <div class="card marketing">
+             <a href="#">
+               <div class="card__img">
+                 <img src="./Design/marketing" alt="">
+               </div>
+               <div class="text-container">
+                 
+                   <p class="card__tag">
+                     Академија за Маркетинг
+                 </p>
+                 <h2 class="card__heading">Име на проектот стои овде во две линии</h2>
+                 <p class="card__text">
+                   Краток опис во кој студентите ќе можат да опишат за што се работи во проектот.
+                 </p>
+                 <p class="card__date">Април - Октомври 2019</p>
+                 <div class="u-align-right">
+                 <button class="card__btn">Дознај повеќе</button>
+                 </div>
+               </div>
+             </div>
+             
+           </a>
+           
+           
+         </div>
+         <div class="u-align-center">
+           <button class="load-more-btn">Load More</button>
+         </div>
+       </div>
+       </section>
+
+       <footer class="footer">
+        <p>Изработено со ❤️ од студентите на Brainster</p>
+      </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="sortby.js"></script>
+    <script src="./js/jquery-latest.min.js"></script>
+    <script>
+      
+      $(".card").slice(0, 3).show(); //showing 3 div
+    
+      $(".load-more-btn").on("click",function(){
+        $(".card:hidden").slice(0, 3).show(); //showing 3 hidden div on click
+    
+        if($(".card:hidden").length ==0)
+        {
+          $(".load-more-btn").fadeOut(); //this will hide
+          //button when length is 0
+        }
+      })
+    </script>
+
+
+</body>
+</html>

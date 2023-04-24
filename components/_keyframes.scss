@@ -1,0 +1,97 @@
+@keyframes opening  {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+
+   .form-btn span {
+       transition: all .3s;
+   }
+
+   @keyframes slide {
+    30% {
+    background: url(blimages/design);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+    }
+
+    65% {
+    background: url(blimages/datascience);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+    }
+
+    100% {
+    background: url(blimages/programming);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+    }
+
+    
+}
+
+@keyframes moveInBottom {
+    0% {
+        transform: translateY(13rem);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+
+    }
+}
+
+@keyframes moveInTop {
+    0% {
+        transform: translateY(-13rem);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateY(1rem);
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+
+    }
+}
+
+@keyframes navEnter {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0rem);
+
+    }
+}

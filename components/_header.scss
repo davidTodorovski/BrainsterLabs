@@ -1,0 +1,208 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 5%;
+    background-color: var(--color-primary);
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(80, 80, 80, 0.1);
+  }
+  
+  nav {
+    z-index: 100;
+    animation: navEnter .4s 0.8s backwards;
+  
+    @media (max-width: 944px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: var(--color-tertiary);
+      padding-top: 12rem;
+      padding-left: 3%;
+      transform: translateX(100%);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all 0.5s ease-in;
+      animation: none;
+  
+    }
+  }
+  
+  .logo {
+    flex-shrink: 0;
+    width: 5.5rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: var(--grey-dark-1);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 2rem;
+    animation: navEnter .4s .8s backwards;
+    &__img {
+      width: 90%;
+    }
+  }
+  
+  .navigation {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  
+    @media (max-width: 944px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    &__item:not(:last-child) {
+      margin-right: 3.6rem;
+  
+      @media (max-width: 944px) {
+        margin-right: 0;
+        margin-bottom: 3.6rem;
+      }
+    }
+  
+    &__link {
+      text-decoration: none;
+      font-size: 1.3em;
+      color: var(--grey-dark-1);
+      display: block;
+      font-weight: 700;
+      transition: all 0.3s ease-in;
+      position: relative;
+  
+      &--border {
+        &:hover {
+          transform: scale(1.04);
+        }
+        &:hover::before {
+          width: 50%;
+          transform: translateX(100%);
+        }
+  
+        &:hover::after {
+          width: 50%;
+          transform: translateX(-100%);
+        }
+      }
+  
+      &--border::before {
+        content: "";
+        width: 0;
+        height: 3px;
+        position: absolute;
+        top: 120%;
+        left: 0;
+        background-color: var(--color-secondary);
+        transition: all 0.5s;
+  
+        
+      }
+  
+      &--border::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        position: absolute;
+        top: 120%;
+        right: 0;
+        background-color: var(--color-tertiary);
+        transition: all 0.5s;
+      }
+  
+      @media (max-width: 944px) {
+        font-size: 2.2rem;
+        color: var(--grey-light-1);
+      }
+  
+      &.nav-cta {
+        background-color: var(--color-secondary);
+        color: #fff;
+        border-radius: 8px;
+        padding: 1rem 2rem;
+        margin-left: 3.8em;
+        transition: all 0.3s;
+  
+  
+        &:hover {
+            background-color:#ca1414 ;
+            box-shadow: 9px 9px 33px rgba(209, 209, 209, 0.8), -9px -9px 33px rgb(255, 255, 255, 0.8);
+
+            @media (max-width: 944px) {
+              box-shadow: none;
+            }
+        }
+  
+        & span {
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+  
+        & span::after {
+           content: '»';
+            position: absolute;
+            top: 0;
+            right: -15px;
+            opacity: 0;
+            transition: 0.5s;
+        }
+  
+        &:hover span {
+          transform: translateX(-8px);
+         
+        }
+  
+        &:hover span::after {
+            opacity: 1;
+            right: -12px;
+        }
+  
+        @media (max-width: 944px) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  
+  .btn-mobile-nav {
+    border: 0;
+    background: none;
+    display: none;
+    z-index: 9999;
+    color: var(--grey-dark-1);
+    cursor: pointer;
+  
+    @media (max-width: 944px) {
+      display: block;
+    }
+  }
+  
+  .nav-open .btn-mobile-nav {
+    color: var(--grey-light-1);
+  }
+  
+  .fa-times {
+    display: none;
+  }
+  
+  .nav-open .fa-bars {
+    display: none;
+  }
+  
+  .nav-open .fa-times {
+    display: block;
+  }
+  
+  .nav-open nav {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+  }
+  
+  

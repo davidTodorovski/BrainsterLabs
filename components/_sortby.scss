@@ -1,0 +1,100 @@
+.sort-by {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * {
+        flex-basis: 33.333%;
+       
+
+        &:not(:last-child) {
+            border-right: 2px solid #41404d;
+
+            @media (max-width:768px) {
+                border-right: 0;
+                border-bottom: 2px solid #41404d;
+            }
+        }
+
+        
+
+        @media (max-width:768px) {
+            flex-basis: 100%;
+            
+            
+        }
+    }
+
+    & > * p {
+        margin-right: 2.4rem;
+        cursor: pointer;
+    }
+
+    &__coding,
+    &__marketing,
+    &__design {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.4rem;
+        background-color: var(--color-tertiary);
+        color: var(--grey-light-1);
+        font-size: 1.6rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .1s;
+        height: 100%;
+
+        &:hover {
+            background-color: var(--color-secondary);
+            color: var(--color-tertiary);
+        }
+
+        &:hover .sort-by__icon {
+            opacity: 1;
+            color: var(--color-tertiary);
+        }
+    }
+
+
+    &__icon {
+        font-size: 2.8rem;
+        opacity: 0;
+        transition:opacity .1s;
+
+    }
+
+    &__coding.active {
+        background-color: var(--color-secondary);
+        color: var(--color-tertiary);
+        
+    }
+
+    &__design.active {
+        background-color: var(--color-secondary);
+        color: var(--color-tertiary);
+    }
+
+    &__marketing.active {
+        background-color: var(--color-secondary);
+        color: var(--color-tertiary);
+    }
+
+    &__coding.active .sort-by__icon {
+        opacity: 1;
+    }
+
+    &__design.active .sort-by__icon {
+        opacity: 1;
+    }
+
+    &__marketing.active .sort-by__icon {
+        opacity: 1;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+
+}
+

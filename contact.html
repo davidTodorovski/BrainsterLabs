@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/850d159fc9.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./Design/Logo.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+          <img src="./Design/Logo.png" alt="" class="logo__img" />
+          <span class="logo__text">Brainster</span>
+        </a>
+        <nav>
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--border" href="https://brainster.co/marketing/">Академија за маркетинг</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--border" href="https://brainster.co/full-stack/">Академија за програмирање</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--border" href="https://brainster.co/data-science/">Академија за data science</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--border" href="https://brainster.co/graphic-design/">Академија за дизајн</a>
+            </li>
+            <li class="navigation__item flex-shrink-0">
+              <a class="navigation__link nav-cta" href="#"><span>Вработи наш студент</span></a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav ">
+          <i class="fas fa-bars fa-2x"></i>
+          <i class="fas fa-times fa-2x"></i>
+        </button>
+      </header>
+
+      <section class="vraboti">
+          <div class="container">
+            <div class="u-align-center">
+          <h1 class="heading-txt h-1">Вработи студенти</h1>
+          </div>
+        <form class="cta-form">
+            <div class="form-container">
+                <label for="name">Име и презиме</label>
+                <input type="text" id="name" placeholder="Вашето име и презиме">
+                <small>Error messsage</small>
+                
+            </div>
+            <div class="form-container">
+                <label for="company">Име на компанија</label>
+                <input type="text" id="company" placeholder="Вашето име на компанија">
+                <small>Error messsage</small>
+            </div>
+            <div class="form-container">
+                <label for="email">Контакт имејл</label>
+                <input type="text" id="email" placeholder="Контакт имејл на вашата компанија">
+                <small>Error messsage</small>
+            </div>
+            <div class="form-container">
+                <label for="telephone">Контакт телефон</label>
+                <input type="tel" id="telephone" placeholder="Контакт телефон на вашата компанија">
+                <small>Error messsage</small>
+            </div>
+            <div>
+                <label for="select where">Тип на студенти</label>
+                <select name="select where" id="select where">
+                    <option value="">Изберете тип на студент</option>
+                    <option value="marketig">Студенти од маркетинг</option>
+                    <option value="marketig">Студенти од програмирање</option>
+                    <option value="marketig">Студенти од data science</option>
+                    <option value="marketig">Студенти од дизајн</option>
+                </select>
+            </div>
+            <button type="submit" class="form-btn">
+              <div class="icon-wrapper">
+              <i class="fas fa-paper-plane"></i>
+            </div>
+             <span>Испрати</span> 
+            </button>
+        </form>
+    </div>
+      </section>
+      <footer class="footer">
+        <p class="footer__text">
+          Изработено со ❤️ од студентите на Brainster
+        </p>
+      </footer>
+
+
+
+
+
+      <script src="script.js"></script>
+      <script src="validation.js"></script>
+</body>
+</html>
